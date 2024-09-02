@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Report</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+ 
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="main">
+        
+       <h1 style="font-size: xx-large;">WEATHER REPORT</h1>
+        <div class="container">
+            <form id="booking-form" class="booking-form" method="POST" action="weatherrepfinal.php">
+                <div class="form-group">
+                    <div class="form-destination">
+                        <label for="place">Place</label>
+                        <input type="text" id="place" name="place" placeholder="EG.New York" />
+                    </div>
+                    <div class="form-date-from form-icon">
+                        <label for="date_from">From</label>
+                        <input type="date" id="date_from" class="date_from" name="date_from" placeholder="Pick a date" />
+                        <!-- <span class="icon"><i class="zmdi zmdi-calendar-alt"></i></span> -->
+                    </div>
+                    <div class="form-date-to form-icon">
+                        <label for="date_to">To</label>
+                        <input type="date" id="date_to" class="date_to" name="date_to" placeholder="Pick a date" />
+                        <!-- <span class="icon"><i class="zmdi zmdi-calendar-alt"></i></span> -->
+                    </div>
+                   
+                    <div class="form-submit">
+                        <input type="submit" id="submit" class="submit" value="Download pdf" />
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+  
+</body>
+</html>
