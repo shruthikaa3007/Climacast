@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>ClimaCast</title>
+    <meta name="title" content="ClimaCast">
+    <meta name="description" content="Climacast is a weather app designed by SK">
+
+     <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+     <link rel="stylesheet" href="./assets/css/style.css">
+
+     <script src="./assets/js/app.js" type="module"></script>
+     <script src="./assets/js/route.js" type="module"></script>
+     
+    </head>
+    <body>
+     
+
+
+<header class="header">
+    <div class="container">
+         <a href="#" class="logo">
+            <img src="./assets\images\logo.jpg" width="500" height="100"
+            alt="logo">
+
+         </a>
+         <div class="search-view" data-search-view>
+            <div class="search-wrapper">
+                <input type="search" name="search" placeholder="Search city..."
+                autocomplete="off" class="search-field"
+                data-search-field>
+
+                <span class="m-icon leading-icon">search</span>
+                
+                <button class="icon-btn leading-icon has-state" aria-label="close search"
+                data-search-toggler>
+                <span class="m-icon">arrow_back</span>
+                </button>
+
+            </div>
+
+            <div class="search-result" data-search-result>
+              
+            </div>
+
+          
+
+        </div>
+
+        <div class="header-actions">
+            <button class="icon-btn has-state" aria-label="open search" data-search-toggler>
+                <span class="m-icon icon">search</span> 
+            </button>
+
+            <a href="#/current-location" class="btn-primary has-state"
+            data-current-location-btn>
+            <span class="m-icon">my_location</span>
+            <span class="span">Current Location</span>
+        </a>
+        </div>
+         </div>
+    </div>
+</header>
+
+
+<main>
+    <article class="container" data-container>
+
+        <div class="content-left">
+
+
+
+            <section class="section current-weather" aria-label="current weather"
+             data-current-weather></section>
+
+
+        <section class="section forecast" aria-labelledby="forecast-label"
+        data-5-day-forecast></section>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+        <div class="content-right">
+
+
+
+            <section class="section highlights" 
+            aria-labelledby="highlights-label" data-highlights></section>
+
+
+        <section class="section hourly-forecast" aria-label="hourly forecast"
+        data-hourly-forecast></section>
+
+        <h2 class="title-2" id="highlights-label">  Radar</h2>
+        <iframe class="radar"  src="https://embed.windy.com/embed2.html?lat=11.971&lon=76.219&detailLat=11.971&detailLon=76.219&width=1000&height=450&zoom=5&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1" frameborder="0"></iframe>
+        <br/>
+         <br>   
+        <h2 class="title-2" id="highlights-label">  Weather Stories</h2>
+
+        <rssapp-wall id="eFLFyXgRlNSteFse"></rssapp-wall><script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
+        <div title="click here to play trivia" class="widget"><a href="http://localhost/quizz/" target="_blank"><img style="border-radius: 50%; position: fixed; z-index: 9999; float: right; height: 75px; width:75px ;   position: fixed; top: 90%; left: 90%; transform: translate(-50%, -50%);  z-index: 9999;" src="./assets/images/quiz.jpg"></a></div>
+        <div title="click here to download weather report" class="widget1"><a href="http://localhost/wrep" target="_blank"><img style="border-radius: 50%; position: fixed; z-index: 9999; float: right; height: 75px; width:75px ;   position: fixed; top: 90%; left: 10%; transform: translate(-50%, -50%);  z-index: 9999;" src="./assets/images/rep.jpeg"></a></div>
+
+
+
+<footer class="footer">
+    <p class="body-3">
+        Copyright 2023 Shruthikaa&Karthika. All Rights Reserved.
+    </p>
+
+    <p class="body-3">
+        Powered By <a href="https://openweathermap.org/api" title="Free OpenWeather API"
+        target="_blank" rel="noopener">
+        <img src="./assets/images/openweather.png" width="150" height="30" 
+        loading="lazy" alt="OpenWeather">
+    </a>
+
+    </p>
+</footer>
+
+
+
+        </div>
+
+        <div class="loading" data-loading></div>
+
+
+
+
+        
+
+
+
+
+    </article>
+</main>
+
+
+<section class="error-content" data-error-content>
+
+    <h2 class="heading">404</h2>
+    
+    <p class="body-1">Page not found!&#129298;</p>
+
+    <a href="#/weather?lat=51.5073219&lon=-0.1276474" class="btn-primary">
+        <span class="span">Go Home</span>
+    </a>
+</section>
+
+
+
+
+
+
+
+</body>
+</html>
